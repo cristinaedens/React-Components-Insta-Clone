@@ -12,7 +12,7 @@ const Post = props => {
   // set up state for the likes
   const [likes, setLikes] = useState (props.post.likes)
 
-  const addLike = (()  => {
+  const addLikes = (()  => {
 setLikes(likes + 1)
   });
 
@@ -33,7 +33,7 @@ setLikes(likes + 1)
       </div>
       <LikeSection
       likes = {likes} 
-      addLike = {addLike}
+      addLikes = {addLikes}
       />
       <CommentSection
         postId={props.post.imageUrl}
